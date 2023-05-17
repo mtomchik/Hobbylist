@@ -11,7 +11,8 @@ function Hobby(props) {
   console.log(props.hobby);
 
   const submitUpdate = (value) => {
-
+    props.editHobbyItem(edit.id, value);
+    setEdit({ id: null, value: '', eagerness: ''});
     // TODO: Write logic to update the `edit` value in state after a user updates an entry in the list
 
     // TODO: Set the key:value pairs in the `edit` object back to empty strings
