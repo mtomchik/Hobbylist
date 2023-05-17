@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function BucketForm(props) {
+function HobbyForm(props) {
   const [input, setInput] = useState('');
   let [eagerness, setEagerness] = useState('');
 
@@ -32,13 +32,13 @@ function BucketForm(props) {
   // If the prop "edit" exists, we know to render the update form instead
   return !props.edit ? (
     <div>
-      <form className="bucket-form" onSubmit={handleSubmit}>
+      <form className="hobby-form" onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Add to your bucket list"
+          placeholder="Add to your hobby list"
           value={input}
           name="text"
-          className="bucket-input"
+          className="hobby-input"
           onChange={handleChange}
         ></input>
         <div className="dropdown">
@@ -52,19 +52,19 @@ function BucketForm(props) {
             <p onClick={}>Take it or leave it</p>
           </div>
         </div>
-        <button className="bucket-button">Add bucket list item</button>
+        <button className="hobby-button">Add hobby list item</button>
       </form>
     </div>
   ) : (
     <div>
       <h3>Update entry: {props.edit.value}</h3>
-      <form className="bucket-form" onSubmit={handleSubmit}>
+      <form className="hobby-form" onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder={props.edit.value}
           value={input}
           name="text"
-          className="bucket-input"
+          className="hobby-input"
           onChange={handleChange}
         ></input>
         <div className="dropdown">
@@ -78,10 +78,10 @@ function BucketForm(props) {
             <p onClick={}>Take it or leave it</p>
           </div>
         </div>
-        <button className="bucket-button">Update</button>
+        <button className="hobby-button">Update</button>
       </form>
     </div>
   );
 }
 
-export default BucketForm;
+export default HobbyForm;

@@ -2,15 +2,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 body {
   background-color: whitesmoke;
 }
 
-.bucket-app {
+.hobby-app {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -40,11 +40,11 @@ h3 {
   opacity: 0.4;
 }
 
-.bucket-form {
+.hobby-form {
   margin-bottom: 32px;
 }
 
-.bucket-input {
+.hobby-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px;
   border: 2px solid #5d0cff;
@@ -54,11 +54,11 @@ h3 {
   color: #fff;
 }
 
-.bucket-input::placeholder {
+.hobby-input::placeholder {
   color: #e2e2e2;
 }
 
-.bucket-button {
+.hobby-button {
   padding: 16px;
   border: none;
   border-radius: 4px;
@@ -69,11 +69,11 @@ h3 {
   text-transform: capitalize;
 }
 
-.bucket-input.edit {
+.hobby-input.edit {
   border: 2px solid #149fff;
 }
 
-.bucket-button.edit {
+.hobby-button.edit {
   background: linear-gradient(
     90deg,
     rgba(20, 159, 255, 1) 0%,
@@ -82,13 +82,13 @@ h3 {
   padding: 16px 22px;
 }
 
-.bucket-container {
+.hobby-container {
   display: flex;
   flex-direction: row;
   position: relative;
 }
 
-.bucket-row {
+.hobby-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
