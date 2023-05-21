@@ -33,10 +33,9 @@ function Hobby(props) {
           {item.text}
       </div>
       <div className="icons">
-        // TODO: Add an onClick event update the `edit` object with the `id`, `value`, and `eagerness` properties
-        <p onClick={}> ✏️</p>
-        {/* TODO: Add an onClick event that will invoke the removeHobbyItem method passing in the `item.id` */}
-        <p onClick={}> 🗑️</p>
+       {console.log(item)}
+        <p onClick={() => setEdit({ id: item.id, value: item.text, eagerness: item.eagerness})}> ✏️</p>
+        <p onClick={() => props.removeHobbyItem(item.id)}> 🗑️</p>
       </div>
     </div>
   ));
